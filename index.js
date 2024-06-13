@@ -32,13 +32,13 @@ btnDecreace.addEventListener("click", () => {
     console.log("its work");
   } */
 
-  if (counters > 33) {
+  if (counters > 0) {
     counters--;
     counter.innerHTML = `${counters}`;
     console.log("Decremented");
   }
 
-  if (counters === 9) {
+  if (counters === 33) {
     document.body.querySelector(".card").style.backgroundColor = "teal";
   }
 });
