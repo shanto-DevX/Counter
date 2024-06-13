@@ -2,10 +2,11 @@
 
 body {
   font-family: "Nunito Sans", sans-serif;
-  margin: 20px;
+  /* margin-top: 150px; */
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 20px;
 }
 
 :active,
@@ -48,14 +49,21 @@ body {
 #counter-Reset {
   font-size: 14px;
 }
+
+#counter {
+}
 #counter,
 #show-Text {
   line-height: 0.5em;
 }
 
 #show-Text {
-  line-height: 1.2em;
-  padding: 0px 30px;
+  line-height: 1.3em;
+  padding: 10px 0px;
+  overflow: hidden;
+  width: 80%;
+  margin: 0 auto;
+  text-wrap: wrap;
 }
 .text-area {
   margin-top: 20px;
@@ -91,4 +99,21 @@ body {
 .btn-text:hover {
   background: teal;
   color: #fff;
+}
+
+.heading {
+  font-size: 26px;
+  padding-top: 20px;
+  text-transform: math-auto;
+}
+#counter {
+  font-size: 56px;
+  margin-top: -10px;
+  margin-bottom: 15px;
+  font-size: 56px;
+}
+
+#btn-count-decrace,
+#btn-count-incrace {
+  padding: 10px 60px;
 }

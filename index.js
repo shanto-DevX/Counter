@@ -18,8 +18,18 @@ btnIncreace.addEventListener("click", () => {
   counter.innerHTML = `${counters}`;
   console.log("Incremented");
 
-  if (counters >= 33) {
-    document.body.querySelector(".card").style.backgroundColor = "red";
+  if (counters === 101) {
+    counter.innerHTML = `0`;
+  }
+
+  if (counters > 0 && counters <= 33) {
+    document.body.querySelector(".card").style.backgroundColor = "teal";
+  } else if (counters >= 33 && counters <= 66) {
+    document.body.querySelector(".card").style.backgroundColor = "green";
+  } else if (counters >= 67 && counters <= 99) {
+    document.body.querySelector(".card").style.backgroundColor = "blue";
+  } else if (counters === 100) {
+    document.body.querySelector(".card").style.backgroundColor = "purple";
   }
 });
 
@@ -38,8 +48,14 @@ btnDecreace.addEventListener("click", () => {
     console.log("Decremented");
   }
 
-  if (counters === 33) {
+  if (counters > 0 && counters <= 33) {
     document.body.querySelector(".card").style.backgroundColor = "teal";
+  } else if (counters >= 34 && counters <= 66) {
+    document.body.querySelector(".card").style.backgroundColor = "green";
+  } else if (counters >= 67 && counters <= 99) {
+    document.body.querySelector(".card").style.backgroundColor = "blue";
+  } else {
+    document.body.querySelector(".card").style.backgroundColor = "purple";
   }
 });
 
