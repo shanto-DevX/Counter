@@ -18,8 +18,8 @@ btnIncreace.addEventListener("click", () => {
   counter.innerHTML = `${counters}`;
   console.log("Incremented");
 
-  if (counters === 101) {
-    counter.innerHTML = `0`;
+  if (counters > 100) {
+    counter = 0;
   }
 
   if (counters > 0 && counters <= 33) {
