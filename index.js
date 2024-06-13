@@ -60,7 +60,8 @@ btnDecreace.addEventListener("click", () => {
 });
 
 countReset.addEventListener("click", () => {
-  counter.innerHTML = `0`;
+  counters = 0;
+  counter.innerHTML = `${counters}`;
 });
 
 textSubmit.addEventListener("click", () => {
