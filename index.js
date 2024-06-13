@@ -18,7 +18,7 @@ btnIncreace.addEventListener("click", () => {
   counter.innerHTML = `${counters}`;
   console.log("Incremented");
 
-  if (counters >= 10) {
+  if (counters >= 33) {
     document.body.querySelector(".card").style.backgroundColor = "red";
   }
 });
@@ -32,7 +32,7 @@ btnDecreace.addEventListener("click", () => {
     console.log("its work");
   } */
 
-  if (counters > 0) {
+  if (counters > 33) {
     counters--;
     counter.innerHTML = `${counters}`;
     console.log("Decremented");
